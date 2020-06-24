@@ -14,4 +14,11 @@ module.exports = app => {
 
     app.route('/searches/:id')
         .delete(app.api.news.removeSearch)
+
+    app.route('/starreds')
+        .get(app.api.starreds.getStarreds)
+        .post(app.api.starreds.saveStarred)
+
+    app.route('/starreds/:id')
+        .delete(app.api.starreds.removeStarred)
 }
