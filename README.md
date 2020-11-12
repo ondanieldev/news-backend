@@ -2,7 +2,9 @@
 
 ## Introduction
 
-This application is a RESTfull API made with Express and Mongoose to implements some functions complements the [News API](https://newsapi.org/).
+This application is a RESTfull API made with Express and Mongoose to implements some functions complements the [News API](https://newsapi.org/);
+
+It was developed to be used with this frontend [News Application Frontend](https://github.com/stemDaniel/news-frontend).
 
 ## Functions
 
