@@ -1,21 +1,61 @@
-# News Application - Backend
+<div align="center">
+  <a href="https://news-frontend.vercel.app/">
+    <div>
+      <h1>News</h1>
+    </div>
+  </a>
+  <br>
+  <br>
+  <div>
+    <a href="https://img.shields.io/github/v/tag/stemDaniel/news-backend?color=%2368d391&style=for-the-badge">
+      <img src="https://img.shields.io/github/v/tag/stemDaniel/news-backend?color=%2368d391&style=for-the-badge">
+    </a>
+    <a href="https://img.shields.io/github/license/stemDaniel/news-backend?color=%2368d391&style=for-the-badge">
+      <img src="https://img.shields.io/github/license/stemDaniel/news-backend?color=%2368d391&style=for-the-badge">
+    </a>
+  </div>
+  <hr>
+</div>
 
 ## Introduction
 
-This application is a RESTfull API made with Express and Mongoose to implements some functions complements the [News API](https://newsapi.org/);
+[News](https://news-frontend.vercel.app/) is a website that shows the breaking news and provides some basic functions about it. It was developed to learn about RESTful APIs.
 
-It was developed to be used with this frontend [News Application Frontend](https://github.com/stemDaniel/news-frontend).
+## Front-end
 
-## Functions
+This repository contains the code related to [News Back-end](https://github.com/stemDaniel/news-backend). If you want to see the front-end repository, please check [News Front-end](https://github.com/stemDaniel/news-frontend).
 
-- Display brazilian trending news (News API native function);
-- To group some news by static sections (News API native function);
-- To search news (News API native function);
-- Users can stars some news to group them such as the browser bookmarks (Implemented by this API);
-- Users can save new sections (Implemented by this API);
-  - These sections are shared, so when a user changes and saves a new section, everyone else will be able to see it too.
+## Features
 
-## Running
+- See breaking news
+- Search for specific news
+- Favorite news
+- And more!
 
-1. Run `npm install` or `yarn` to download dependencies and generate node_modules folder;
-2. Run `npm run dev` or `yarn dev` to start application in development mode.
+## Endpoints
+
+| METHOD | PATH                    | SHORT DESCRIPTION            |
+| ------ | ----------------------- | ---------------------------- |
+| GET    | /news                   | Index breaking news          |
+| GET    | /news-by-source/:source | Index news based on a source |
+| GET    | /news-by-search/:search | Index news based on a search |
+| GET    | /searches               | Index all saved searches     |
+| POST   | /searches               | Save a search                |
+| DELETE | /searches/:id           | Delete a search              |
+| GET    | /starreds               | Index all starred news       |
+| POST   | /starreds               | Star a news                  |
+| DELETE | /starreds/:id           | Remove a news from starreds  |
+
+## How to run
+
+1. Install project dependencies:
+
+   `npm install` or `yarn install`
+
+2. Run project:
+
+   `npm run dev` or `yarn dev`
+
+## License
+
+MIT © [Daniel Oliveira](https://ondaniel.com.br/)
